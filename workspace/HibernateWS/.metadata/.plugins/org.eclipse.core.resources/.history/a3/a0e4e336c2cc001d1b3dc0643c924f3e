@@ -1,0 +1,19 @@
+package oracle.tms.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import oracle.tms.dao.OwnerDetailsDAO;
+import oracle.tms.entities.OwnerDetailsEO;
+
+class OwnerDetailsEOTest {
+	
+	public OwnerDetailsDAO ownerDetailsRef= new OwnerDetailsDAOImpl();
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,11 @@
+package training.oracle.springbootrestapp;
+
+@RestController
+public class HomeController {
+	
+	@RequestMapping("/welcome")
+	public String welcomeMessage() {
+		return "Welcome to Home Page of RestApp";
+	}
+
+}

@@ -1,0 +1,6 @@
+package oracle.tms.business;
+
+public interface RTOOperations {
+	public Integer addOffenceType(OffenceEO offenceEORef);
+
+}

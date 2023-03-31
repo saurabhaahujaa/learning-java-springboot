@@ -1,0 +1,8 @@
+package oracle.tms.utils;
+
+public class HibernateUtil {
+	
+	private static final SessionFactory sessionFactoryRef;
+	
+
+}

@@ -1,0 +1,7 @@
+package oracle.tms.dao;
+
+import oracle.tms.entities.OffenceEO;
+
+public interface OffenceDAO {
+	public OffenceEO insertOffence( OffenceEO offenceEORef);
+}

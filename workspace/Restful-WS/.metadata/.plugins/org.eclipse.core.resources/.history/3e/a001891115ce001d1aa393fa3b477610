@@ -1,0 +1,7 @@
+package training.oracle.rest;
+
+@Path("greeting")
+public class GreetingResource {
+	
+
+}

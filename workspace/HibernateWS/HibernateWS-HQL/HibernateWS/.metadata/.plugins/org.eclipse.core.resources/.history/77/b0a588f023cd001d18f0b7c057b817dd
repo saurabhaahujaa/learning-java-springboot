@@ -1,0 +1,98 @@
+package oracle.tms.test;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.junit.Test;
+import junit.framework.Assert;
+import oracle.tms.dao.OffenceDAO;
+import oracle.tms.dao.impl.OffenceDAOImpl;
+import oracle.tms.entities.OffenceEO;
+
+public class OffenceEOTest {
+
+	public OffenceDAO offenceDAORef = new OffenceDAOImpl();
+	
+	@Test
+	public void testInsertOffence() {
+		
+		// Creating an Entity Object 
+		OffenceEO offenceEORef = 
+				new OffenceEO(new Integer(1001),"No Licence" , new Float(5000.0f), "All Vehicles");
+		
+		// Invoke the DAO Impl
+		Integer result = offenceDAORef.insertOffence(offenceEORef);
+		
+		// Testing 
+		Assert.assertEquals(new Integer(1001),result);
+		
+	}
+	
+	@Test
+	public void testUpdateOffence() {
+		
+		// Creating an Entity Object 
+		OffenceEO offenceEORef = 
+				new OffenceEO(new Integer(1001),"Rash Driving" , new Float(15000.0f), "All Vehicles");
+		
+		OffenceEO offenceEORef1 = offenceDAORef.findOffenceEOByPrimaryKey(1001);
+		
+		offenceEORef1.setPenalty(20000.0f);
+		
+		// Invoke the DAO Impl
+		offenceDAORef.updateOffence(offenceEORef1);
+				
+	}
+	
+	@Test
+	public void testDeleteOffence() {
+		
+		// Invoke the DAO Impl
+		offenceDAORef.deleteOffence(new Integer(1001));
+			
+	}
+	
+	@Test
+	public void testFindByOffenceEOByPrimaryKey() {
+		
+		// Invoke the DAO Impl
+		OffenceEO resultOffence = offenceDAORef.findOffenceEOByPrimaryKey(2001);
+		
+		Assert.assertNotNull(resultOffence);
+		System.out.println(resultOffence);
+	}
+	
+	@Test
+	public void testFindAll() {
+		
+		// Invoke the DAO Impl
+		List<OffenceEO> resultOffences = offenceDAORef.findAll();
+		
+		Assert.assertNotNull(resultOffences);
+		
+		for (Iterator iterator = resultOffences.iterator(); iterator.hasNext();) {
+			OffenceEO offenceEO = (OffenceEO) iterator.next();
+			System.out.println(offenceEO);
+		}
+		
+	}
+	
+	@Test
+	public void testFindByPenalty() {
+		
+		// Invoke the DAO Impl
+		List<OffenceEO> resultOffences = offenceDAORef.findByGivenPenalty(15000.0f);
+		
+		Assert.assertNotNull(resultOffences);
+		
+		for (Iterator iterator = resultOffences.iterator(); iterator.hasNext();) {
+			OffenceEO offenceEO = (OffenceEO) iterator.next();
+			System.out.println(offenceEO);
+		}
+		
+	}
+	
+	
+	
+	
+}

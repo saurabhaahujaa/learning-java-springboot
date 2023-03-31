@@ -1,0 +1,157 @@
+Day 3 
+
+	Module 2 : Spring Framework 
+	
+		Spring With UI and DataStore
+		
+			Any Web Application is Accessed via URL 
+			
+			URL is Composed of 
+			
+			< Protocol > : // < IP Address > : < PortNo > / AppName / ResourceName 
+			
+			
+	Module 3 :  RESTFul WebServices 
+	
+		If Client is Non Java Based in the Current Use Case , Then Communication would be Lil Difficult [ They are Not INTEROPERABLE ]
+		
+		Web Services Comes In
+		
+			INTEROPERABLE [ Client Be On Any Platform , Application Can Be on Any Platform ] Still Communication Can Go On ... 
+			
+			
+		UI is Moving Web Centric 
+		
+		Web Application 
+		
+			HTML 
+			
+			Scripting [ Small Programming Bits ]
+			
+			1.  Client Side Scripting 
+			
+					a. Java Script 
+					
+					b. VB Script 
+			
+			2.  Server Side Scripting 
+			
+					a.  CGI
+					
+					b.  Servlets 
+					
+					c.  JSP 
+					
+					d.  JSF 
+					
+					e.  ASP
+					
+					f.  PHP 
+					
+					...
+		
+			Request Response Architecture 
+			
+			1.  Encapsulation of Client Details
+				[ Server Gathers the Details About the Client ]
+			
+			2.  Request Processing Phase 
+				[ Server Delegates the Request to Corresponding Component, In turn The Component Will intake the Request, Process the Request ]
+		
+			3.  Response Generation Phase 
+				[ Component Produces a Response and Hands it Over to the Server, in turn Server Hands it Back to the Client ]
+				
+
+			Web Services 
+			
+			1.  SOAP Based WS [ WSDL ]
+			
+					Are Based on the Service Class Containing the Business Operations
+					
+					a. Invoke the Business Operations Via Operation Name
+					
+					b. Can Be Accessed by Any Client Since Not Specifically Connected to Particular Platform or Protocol 
+					
+					c. Services Description Should be Done [ WSDL ]
+					
+					d. Full Fledge API [ Server and Client API ]
+			
+			2.  RESTFul Web Services [ WADL ]
+			
+					Are Based on the Service Class Containing the Business Operations, Revolved Around HTTP Methods [ GET, POST, PUT, DELETE ]
+					
+					a. Invoke Business Operation  Based on HTTP Method Not VIA Operation Name 
+					
+					b.  Will Be Accessible by HTTP Client Since It is Connected to a Dedicate Protocol [ HTTP ]
+					
+					c.  Still Evolving [ Server and Client Implementations ( Jersey )]
+					
+			Tools to Test Our WS
+			
+			1.  IDE Provided
+			
+			2.  cURL
+			
+			3.  POSTMAN
+			
+			4.  RESTClient Ext
+			
+				...
+				
+			HTTP is a Stateless Protocol 
+			
+			
+			In REST App We Access the Resources using URL 
+			
+				Every Resource in REST App is Connected with a URL 
+				
+					GreetingResource  ------ /greeting 
+					
+					http://localhost:8888/RestfulApp/greeting
+			
+			
+			Its not Mandatory to Have Application Class 
+			
+				In Case if We Dont Have Application Class Then It Brings Jersey Application to do the Job.
+				
+				We Can Directly Access the Resources Without ApplicationPath 
+				
+				http://localhost:8888/Lesson01-RestfulApp/greeting
+				
+				
+			Executiong Flow 
+			
+			1.  Control First Should Come to the Controller [ ServletAdaptor ]
+			
+				http://localhost:8888/Lesson01-RESTFulWS-App/resources
+				
+				Only Then Jersey API Will Locate the Resources Within the Application 
+				
+	
+			2.  In the URL It Will Parse the Resource Name in the Application 
+			
+				http://localhost:8888/Lesson01-RESTFulWS-App/resources/greeting
+				
+				Here My Resource Name : greeting 
+				
+			3.  Find the Resource With in the Application With the Given Name 
+			
+			4.  If Resources in Found, then the Resource is Brought into Action [ Life Cycle ]
+			
+			5.  Which Method to Call is Decided by the HTTP Method
+			
+				IF Client Uses GET then On the REST Resouce, It Will Invoke a Method Which is Marked with the GET Annotation 
+				
+				IF Client Uses POST then On the REST Resouce, It Will Invoke a Method Which is Marked with the POST Annotation 
+				
+				IF Client Uses PUT then On the REST Resouce, It Will Invoke a Method Which is Marked with the PUT Annotation 
+				
+				IF Client Uses DELETE then On the REST Resouce, It Will Invoke a Method Which is Marked with the DELETE Annotation 
+				
+				
+			We Can Have Multiple HTTP Methods [ Multiple GET Methods ] 
+			
+			http://localhost:8888/Lesson01-RESTFulWS-App/resources/messages
+			
+			
+			http://localhost:8888/Lesson01-RESTFulWS-App/resources/messages/1001

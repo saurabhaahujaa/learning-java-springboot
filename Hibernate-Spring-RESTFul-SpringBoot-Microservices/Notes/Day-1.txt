@@ -1,0 +1,131 @@
+Day 1 :
+
+	Softwares 
+	
+		1.  DB  : MySQL 
+		
+			https://dev.mysql.com/downloads/workbench/  8.X
+		
+		2.  IDE : Spring Tool Suite 
+		
+			https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+			
+			Spring Tool Suite 3.9.15
+			
+		
+		3.  Framework Packages 
+		
+			Hibernate 
+			
+				https://hibernate.org/orm/releases/5.6/
+			
+			Spring 
+			
+
+	Module-1 : Hibernate Intro
+	
+	
+			What is a Middleware ?
+			
+				A Middleware is a Software Which Provides Lot of Services 
+				
+				Types
+					
+					1.  Web Server 
+					
+							[ Web Tier Supports Web Components ]
+					
+					2.  Application Server 
+					
+							[ Web Tier Supports Web Components ]
+							
+										+
+										
+							[ Business Tier Supports Business Components ]
+							
+							
+					ORM [ Object Relational Mapping ]
+					
+						Java class Points to a Table/View in Database 
+						
+						Attributes Points to a Column in the Table 
+						
+						Java Object Instance Points to a Record in the DB
+					
+					
+					Services Provided By Middleware
+					
+					1. Instance Pooling 
+					
+					2. Instance Passivation
+					
+					3. Database Connection Pooling
+					
+					4. Pre Cached Instances 
+					
+					5. Life Cycle Management
+					
+					6. Security Management 
+					
+					7. Transaction Management
+					
+					8. Low Level Services 
+					
+						a. Exception Handling
+						
+						b. Multi Threading
+						
+						c. IO Interaction 
+						
+					9. Naming Services 
+					
+					10. Messaging Services
+					
+					11. Timer Services 
+					
+					12. Remoting Services 
+					
+					13. Logging Services
+					
+					14. Request Response Delegation 
+					
+					...
+					
+				What is a Design Pattern ?
+
+					Is a SET of Guide Lines 
+					
+					DAO [ Data Access Object ] 
+							
+								
+				
+				In Persistence Layer [ Hibernate ]
+				
+					1.  DB Configuration Details
+					
+							a. hibernate.properties
+							
+							b. hibernate.cfg.xml 
+						
+					2.  ORM Configuration Details 
+					
+							a. Separate XML Mapping [ Not Prefered ]
+					
+							b. Using Annotations 
+							
+							
+					
+					
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		

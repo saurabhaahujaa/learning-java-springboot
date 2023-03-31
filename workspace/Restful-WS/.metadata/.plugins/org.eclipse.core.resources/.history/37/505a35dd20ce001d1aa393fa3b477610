@@ -1,0 +1,22 @@
+package training.oracle.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+
+@Path("greeting")
+public class GreetingResource {
+	
+	private static String message="Welcome to RESTAPI";
+	
+	@GET
+	public String getMessage() {
+		return message;
+	}
+	
+	@PUT
+	public void setMessage(String givenMessage) {
+		 this.message=givenMessage;
+	}
+	
+}

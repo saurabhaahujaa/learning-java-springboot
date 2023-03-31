@@ -1,0 +1,18 @@
+package training.oracle.movieinfoservice.resources;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import training.oracle.movieinfoservice.models.Movie;
+
+@RestController
+@RequestMapping("/v1/movie")
+public class MovieResource {
+	
+	@RequestMapping("/{movieId}")
+	public Movie getInfo(@PathVariable("movieId") String movieId) {
+		return new Movie(movieId,"Vikram");
+	};
+
+}

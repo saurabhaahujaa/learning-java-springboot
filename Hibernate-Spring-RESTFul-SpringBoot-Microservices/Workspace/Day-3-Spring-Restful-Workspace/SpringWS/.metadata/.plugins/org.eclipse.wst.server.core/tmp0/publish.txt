@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Mar 29 11:25:44 IST 2023
+org.eclipse.jst.jee.server\:/binary\:E\:\\Training\\Hibernate\ Spring\ RESTFul\ WS\ SpringBoot\ and\ Microservices\ 27-Mar-2023\\Workspace\\SpringWS\\Lesson06-UI-Spring-ORM\\WebContent\\WEB-INF\\lib\\spring-web-5.3.5.jar=WEB-INF/lib/spring-web-5.3.5.jar
+org.eclipse.jst.jee.server\:/binary\:E\:\\Training\\Hibernate\ Spring\ RESTFul\ WS\ SpringBoot\ and\ Microservices\ 27-Mar-2023\\Workspace\\SpringWS\\Lesson06-UI-Spring-ORM\\WebContent\\WEB-INF\\lib\\spring-web-5.3.5-sources.jar=WEB-INF/lib/spring-web-5.3.5-sources.jar

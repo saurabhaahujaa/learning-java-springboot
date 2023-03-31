@@ -1,0 +1,21 @@
+package oracle.tms.entry;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import oracle.tms.business.RTOOperations;
+
+public class DriverApp {
+	public static void main(String[] args) {
+		// IOC Container got into Action
+		ApplicationContext appContext=new ClassPathXmlApplicationContext("/beans.xml");
+		
+		//Lookup for Business Components on IOC
+		RTOOperations rtoOperRef=(RTOOperations)appContext.getBean("rtobean");
+		
+		//Invoke the operations
+		
+		List<OffenceEO> resultListRef=rtoOperRef.fetchAllOffenceTypes();
+	}
+
+}

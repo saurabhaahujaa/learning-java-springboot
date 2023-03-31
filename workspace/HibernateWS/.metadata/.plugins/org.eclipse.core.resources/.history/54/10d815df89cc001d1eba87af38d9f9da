@@ -1,0 +1,62 @@
+package oracle.tms.dao.impl;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import oracle.tms.dao.OffenceDAO;
+import oracle.tms.entities.OffenceEO;
+import oracle.tms.utils.HibernateUtil;
+
+public class OffenceDAOImpl implements OffenceDAO {
+
+	@Override
+	public Integer  insertOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef=HibernateUtil.getSessionFactory();
+		Session sessionRef=sessionFactoryRef.openSession(); // To Invoke API methods
+		sessionRef.beginTransaction();
+		Integer returnedPK=(Integer)sessionRef.save(offenceEORef); // API Call
+		sessionRef.getTransaction().commit();
+		sessionRef.close();
+		return returnedPK;
+	}
+
+	@Override
+	public void updateOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef=HibernateUtil.getSessionFactory();
+		Session sessionRef=sessionFactoryRef.openSession();
+		sessionRef.beginTransaction();
+		sessionRef.update(offenceEORef);// Update happens based on PK
+		sessionRef.getTransaction().commit();
+		sessionRef.close();
+
+	}
+
+	@Override
+	public void deleteOffence(Integer offenceID) {
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef=HibernateUtil.getSessionFactory();
+		Session sessionRef=sessionFactoryRef.openSession();
+		sessionRef.beginTransaction();
+		// Find EO based on PK
+		OffenceEO offenceEOToBeDeleted = sessionRef.get(OffenceEO.class, offenceID);
+		sessionRef.delete(offenceEOToBeDeleted);;// Delete happens based on PK
+		sessionRef.getTransaction().commit();
+		sessionRef.close();
+
+	}
+
+	@Override
+	public OffenceEO findOffenceEOByPrimaryKey(Integer offenceID) {
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef=HibernateUtil.getSessionFactory();
+		Session sessionRef=sessionFactoryRef.openSession();
+		// Find EO based on PK
+		OffenceEO offenceEOToBeDeleted = sessionRef.get(OffenceEO.class, offenceID);
+		sessionRef.delete(offenceEOToBeDeleted);;// Update happens based on PK
+		sessionRef.close();
+		return offenceEOToBeDeleted;
+	}
+
+}

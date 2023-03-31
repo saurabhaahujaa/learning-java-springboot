@@ -1,0 +1,5 @@
+package training.oracle.movieinfoservice.models;
+
+public class Movie {
+
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  Constructor Injection  -->
+	
+	<bean id="currencyConvertorBean" class="training.oracle.business.CurrencyConvertorImpl"
+		  scope="singleton">
+		  <constructor-arg ref="customerBean"/>
+	</bean>
+	
+	<bean id="customerBean" class="training.oracle.business.Customer" scope="singleton">
+		  <constructor-arg value="1001" index="0"  type="int"/>
+		  <constructor-arg value="Rahul" index="1"  type="String"/>
+		  <constructor-arg value="Bangalore" index="2"  type="String"/>
+		  <constructor-arg value="9874563210" index="3"  type="String"/>
+	</bean>
+	
+	<bean id="logBefAdvice" class="training.oracle.spring.aop.LoggingBeforeAdvice" />
+	<bean id="logAftAdvice" class="training.oracle.spring.aop.LoggingAfterAdvice" />
+	
+	<!--  Integration of Business and Services  -->
+	<bean id="ccBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+		
+		<!--  Business Interfaces -->
+		<property name="proxyInterfaces" value="training.oracle.business.CurrencyConvertor"/>
+		
+		<!--  Linking of Services [ Advices ] -->
+		<property name="interceptorNames">
+			<list>
+				<value>logBefAdvice</value>
+				<value>logAftAdvice</value>
+			</list>
+		</property>
+		
+		<!--  Linking the Business Impl Class -->
+		<property name="target">
+			<ref bean="currencyConvertorBean"/>
+		</property>
+	</bean>
+</beans>

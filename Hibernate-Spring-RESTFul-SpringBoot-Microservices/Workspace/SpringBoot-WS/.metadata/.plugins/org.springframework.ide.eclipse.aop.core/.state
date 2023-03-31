@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring-boot-jdbc"/>
+<aop-project name="spring-boot-jpa"/>
+<aop-project name="spring-boot-creation-way1"/>
+<aop-project name="spring-boot-creation-way4"/>
+<aop-project name="spring-boot-restapp"/>
+<aop-project name="spring-boot-logging"/>
+<aop-project name="Spring-Boot-Creation-Using-Way2"/>
+</aop-reference-model>

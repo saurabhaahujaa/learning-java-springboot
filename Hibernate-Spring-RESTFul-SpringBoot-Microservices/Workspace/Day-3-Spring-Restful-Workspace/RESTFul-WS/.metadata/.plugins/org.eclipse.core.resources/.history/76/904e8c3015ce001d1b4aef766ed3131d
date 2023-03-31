@@ -1,0 +1,10 @@
+package training.oracle.rest;
+
+import javax.ws.rs.Path;
+
+@Path("greeting")
+public class GreetingResource {
+
+	private static String message = 
+				"Welcome to the New Era of Developing WebServices ... !";
+}

@@ -1,0 +1,6 @@
+package training.oracle.rest;
+
+@ApplicationPath("TMSApp")
+public class ApplicationConfig {
+
+}

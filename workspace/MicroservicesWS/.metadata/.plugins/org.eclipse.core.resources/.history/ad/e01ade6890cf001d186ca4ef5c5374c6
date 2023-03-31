@@ -1,0 +1,8 @@
+package training.oracle.moviecatalogservice.models;
+
+public class CatalogItem {
+
+	private String name;
+	private String description;
+	private Integer rating;
+}

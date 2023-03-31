@@ -1,0 +1,6 @@
+package oracle.tms.entities;
+
+@Entity
+public class OffenceEO {
+
+}

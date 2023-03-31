@@ -1,0 +1,15 @@
+https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+MYSQL workbench
+https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3 - 3.9.15
+Hibernate 5.6 Final
+
+Spring 5.3.5 framework
+https://repo.spring.io/ui/native/release/org/springframework/spring/5.3.5/
+Apache tomcat
+https://tomcat.apache.org/download-90.cgi
+jersey 2.25.1
+https://eclipse-ee4j.github.io/jersey/download.html
+
+jackson and oauth2
+
+download and install postman

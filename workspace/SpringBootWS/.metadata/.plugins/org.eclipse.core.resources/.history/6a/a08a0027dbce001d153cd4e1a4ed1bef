@@ -1,0 +1,5 @@
+package training.oracle.springbootjdbc;
+
+public class OffenceViewObject {
+
+}

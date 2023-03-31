@@ -1,0 +1,32 @@
+package oracle.tms.dao.impl;
+
+import oracle.tms.dao.OwnerDetailsDAO;
+import oracle.tms.entities.OwnerDetailsEO;
+
+public class OwnerDetailsDAOImpl implements OwnerDetailsDAO {
+
+	@Override
+	public Integer insertOwnerDetails(OwnerDetailsEO ownerDetailsEORef) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateOwnerDetails(OwnerDetailsEO ownerDetailsEORef) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteOffence(Integer ownerID) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public OwnerDetailsEO findOwnerIdEOByPrimaryKey(Integer ownerID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

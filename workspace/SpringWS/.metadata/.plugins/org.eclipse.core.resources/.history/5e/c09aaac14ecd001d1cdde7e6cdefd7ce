@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--  Auto Wire by Name
+<bean id="customerRef" class="oracle.spring.business.impl.Customer">
+	<property name="id" value="1" />
+	<property name="name" value="Rahul" />
+	<property name="phone" value="1212334" />
+</bean>
+
+<bean id="ccBean" class="oracle.spring.business.impl.CurrencyConvertorImpl" autowire="byName">
+</bean>
+-->
+<!--  Autowire by type
+<bean id="customerBean" class="oracle.spring.business.impl.Customer">
+	<property name="id" value="1" />
+	<property name="name" value="Rahul" />
+	<property name="phone" value="1212334" />
+</bean>
+
+<bean id="ccBean" class="oracle.spring.business.impl.CurrencyConvertorImpl" autowire="byType">
+</bean>
+
+<bean id="customerBean2" class="oracle.spring.dummy.Customer">
+	<property name="id" value="2" />
+	<property name="name" value="Vijay" />
+	<property name="phone" value="1212334" />
+</bean>
+
+<bean id="ccBean2" class="oracle.spring.business.impl.CurrencyConvertorImpl" autowire="byType">
+</bean>
+</beans>
+-->
+
+<bean id="customerBean" class="oracle.spring.business.impl.Customer">
+	<property name="id" value="1" />
+	<property name="name" value="Rahul" />
+	<property name="phone" value="1212334" />
+</bean>
+
+<bean id="ccBean" class="oracle.spring.business.impl.CurrencyConvertorImpl" autowire="byType">
+</bean>
+
+<bean id="customerBean2" class="oracle.spring.dummy.Customer">
+	<property name="id" value="2" />
+	<property name="name" value="Vijay" />
+	<property name="phone" value="1212334" />
+</bean>
+
+<bean id="ccBean2" class="oracle.spring.business.impl.CurrencyConvertorImpl" autowire="byType">
+</bean>

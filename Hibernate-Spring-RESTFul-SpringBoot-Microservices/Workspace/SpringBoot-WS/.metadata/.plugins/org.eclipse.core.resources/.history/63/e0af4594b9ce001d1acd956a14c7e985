@@ -1,0 +1,7 @@
+package training.oracle.springboot;
+
+@SpringBootApplication
+public class SpringBootCreationWay1Demo {
+
+	
+}

@@ -1,0 +1,10 @@
+package training.oracle.business.impl;
+
+import training.oracle.business.RTOOperations;
+
+public interface RTOOperationsImpl extends RTOOperations {
+	
+	@Autowired
+	private OffenceRepository offenceRepository;
+
+}

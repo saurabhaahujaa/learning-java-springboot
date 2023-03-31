@@ -1,0 +1,22 @@
+package training.oracle.movieinfoservice.resources;
+
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import training.oracle.movieinfoservice.models.Movie;
+
+@EnableDiscoveryClient
+@EnableCircuitBreaker
+@RestController
+@RequestMapping("/v1/movies")
+public class MovieResource {
+	
+	@RequestMapping("/{movieId}")
+	public Movie getInfo(@PathVariable("movieId") String movieId) {
+		return new Movie(movieId,"Vikram");
+	};
+
+}

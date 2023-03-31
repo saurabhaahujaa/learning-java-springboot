@@ -1,0 +1,12 @@
+package oracle.tms.dao;
+
+import oracle.tms.entities.OwnerDetailsEO;
+
+public interface OwnerDetailsDAO {
+	
+	public Integer insertOwnerDetails( OwnerDetailsEO ownerDetailsEORef);
+	public void updateOwnerDetails(OwnerDetailsEO ownerDetailsEORef);
+	public void deleteOffence(Integer ownerDetailsID);
+	public OwnerDetailsEO findOwnerIdEOByPrimaryKey(Integer ownerDetailsID);
+
+}

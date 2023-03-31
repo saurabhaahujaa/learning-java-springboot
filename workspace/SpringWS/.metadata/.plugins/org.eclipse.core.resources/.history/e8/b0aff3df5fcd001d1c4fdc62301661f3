@@ -1,0 +1,9 @@
+package oracle.tms.entry;
+
+public class DriverApp {
+	public static void main(String[] args) {
+		// IOC Container got into Action
+		Application
+	}
+
+}

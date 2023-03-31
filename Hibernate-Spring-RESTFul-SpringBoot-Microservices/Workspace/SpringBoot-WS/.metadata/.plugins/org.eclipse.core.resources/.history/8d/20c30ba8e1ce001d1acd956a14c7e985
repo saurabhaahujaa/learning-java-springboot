@@ -1,0 +1,19 @@
+package training.oracle.springbootjdbc;
+
+public class OffenceVO {
+
+	private Integer offenceId;
+	
+	private String offenceType;
+	
+	private Float penalty;
+	
+	private String vehType;
+	
+	public OffenceVO() {
+		
+	}
+
+	
+	
+}

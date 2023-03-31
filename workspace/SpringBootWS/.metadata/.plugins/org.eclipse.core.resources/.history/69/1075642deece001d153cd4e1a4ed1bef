@@ -1,0 +1,11 @@
+package training.oracle.entities;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import training.oracle.springbootjpa.OffenceEO;
+
+@Repository
+public interface OffenceRepository extends CrudRepository<OffenceEO,Integer>{
+
+}

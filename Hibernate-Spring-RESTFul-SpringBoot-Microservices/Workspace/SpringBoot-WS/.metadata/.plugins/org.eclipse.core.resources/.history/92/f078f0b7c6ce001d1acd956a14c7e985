@@ -1,0 +1,10 @@
+package training.oracle.springbootrestapp;
+
+
+public class HomeController {
+
+	public String welcomeMessage() {
+		return "Welcome to New Era Of Creating Spring Applications Using SB !";
+	}
+	
+}

@@ -1,0 +1,13 @@
+package training.oracle.business.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import training.oracle.business.RTOOperations;
+import training.oracle.dao.OffenceRepository;
+
+public class RTOOperationsImpl implements RTOOperations {
+	
+	@Autowired
+	private OffenceRepository offenceRepository;
+
+}

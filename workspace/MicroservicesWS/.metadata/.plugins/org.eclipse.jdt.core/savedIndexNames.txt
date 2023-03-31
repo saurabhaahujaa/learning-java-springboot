@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/home/sauahuja/code/learning-java-springboot/workspace/MicroservicesWS/.metadata/.plugins/org.eclipse.jdt.core
+2744878784.index
+2893802405.index
+1022019425.index
+502732891.index
+2396367372.index
+3491911663.index

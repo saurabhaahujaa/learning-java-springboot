@@ -1,0 +1,25 @@
+INDEX VERSION 1.130+E:\Training\Hibernate Spring RESTFul WS SpringBoot and Microservices 27-Mar-2023\Workspace\SpringWS\.metadata\.plugins\org.eclipse.jdt.core
+1684377952.index
+4054021392.index
+3293161315.index
+1368747750.index
+1663383256.index
+1054044882.index
+2918000973.index
+2897131040.index
+2715988442.index
+1762074124.index
+4076519575.index
+334447450.index
+4211050514.index
+2919214285.index
+1632746683.index
+875039656.index
+248398239.index
+3110426816.index
+4172261512.index
+996588682.index
+1786664264.index
+287465481.index
+3790456806.index
+192081947.index

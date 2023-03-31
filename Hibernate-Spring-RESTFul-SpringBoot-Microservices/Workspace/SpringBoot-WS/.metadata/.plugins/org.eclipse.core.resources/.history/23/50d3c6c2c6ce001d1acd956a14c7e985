@@ -1,0 +1,11 @@
+package training.oracle.springbootrestapp;
+
+@RestController
+public class HomeController {
+
+	@RequestMapping("/welcome")
+	public String welcomeMessage() {
+		return "Welcome to New Era Of Creating Spring Applications Using SB !";
+	}
+	
+}

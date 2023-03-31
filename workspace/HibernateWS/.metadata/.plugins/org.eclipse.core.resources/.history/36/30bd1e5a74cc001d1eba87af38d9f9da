@@ -1,0 +1,9 @@
+package oracle.tms.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table
+public class OffenceEO {
+
+}

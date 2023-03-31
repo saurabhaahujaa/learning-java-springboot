@@ -1,0 +1,60 @@
+package oracle.tms.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+import oracle.tms.dao.OwnerDetailsDAO;
+import oracle.tms.dao.impl.OwnerDetailsDAOImpl;
+import oracle.tms.entities.OffenceEO;
+import oracle.tms.entities.OwnerDetailsEO;
+
+class OwnerDetailsEOTest {
+	
+	public OwnerDetailsDAO ownerDetailsRef= new OwnerDetailsDAOImpl();
+
+	@Test
+	public void testInsertOwnerDetails() {
+		
+		//Create entity object
+		OwnerDetailsEO ownerDetailsEORef=
+				new OwnerDetailsEO(new Integer(1001),"John","Chambers","12/1/80",new Integer(803456),"7790882716","MALE","12 JM UK","11 US",new Integer(560075),"CEO","ahrrp2323p","Adhaar");
+		//Invoke the DAO Impl
+		Integer result=ownerDetailsRef.insertOwnerDetails(ownerDetailsEORef);
+		
+		//Testing
+//		Assert.assertEquals(new Integer(1004), result);
+	}
+	
+}
+//@Test
+//public void testUpdateOffence() {
+//	
+//	//Create entity object
+//	OffenceEO offenceEORef=
+//			new OffenceEO(new Integer(1001),"Rash Driving",new Float(10000.0f),"All vehicles");
+//	
+//	//Invoke the DAO Impl
+//	offenceDAORef.updateOffence(offenceEORef);
+//	
+//}
+//
+//@Test
+//public void testDeleteOffence() {
+//	
+//	//Invoke the DAO Impl
+//	offenceDAORef.deleteOffence(new Integer(1004));
+//
+//}
+//
+//@Test
+//public void testfindOffenceEOByPrimaryKey() {
+//	
+//	OffenceEO resultOffence=offenceDAORef.findOffenceEOByPrimaryKey(1003);
+//	
+//	Assert.assertNotNull(resultOffence);
+//	System.out.println(resultOffence);
+//}
+
+}

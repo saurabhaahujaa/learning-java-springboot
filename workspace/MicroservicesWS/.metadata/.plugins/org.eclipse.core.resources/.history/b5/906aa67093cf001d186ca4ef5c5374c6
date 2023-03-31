@@ -1,0 +1,7 @@
+package training.oracle.ratingdataservice.resources;
+
+@RequestController
+@RequestMapping("/v1/ratingdata")
+public class RatingResource {
+
+}

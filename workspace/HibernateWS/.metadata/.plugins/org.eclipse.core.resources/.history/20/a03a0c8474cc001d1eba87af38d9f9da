@@ -1,0 +1,13 @@
+package oracle.tms.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="TM_OFFENCE")
+public class OffenceEO {
+	private Integer offenceId;
+	private String offenceType;
+	private Integer penalty;
+	
+
+}

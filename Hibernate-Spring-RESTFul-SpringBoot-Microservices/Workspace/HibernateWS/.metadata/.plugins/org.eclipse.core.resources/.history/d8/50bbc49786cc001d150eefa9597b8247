@@ -1,0 +1,32 @@
+package oracle.tms.dao.impl;
+
+import oracle.tms.dao.OffenceDAO;
+import oracle.tms.entities.OffenceEO;
+
+public class OffenceDAOImpl implements OffenceDAO {
+
+	@Override
+	public OffenceEO insertOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteOffence(Integer offenceID) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public OffenceEO findOffenceEOByPrimaryKey(Integer offenceID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

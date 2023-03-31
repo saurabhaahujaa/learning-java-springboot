@@ -1,0 +1,13 @@
+package oracle.tms.entry;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DriverApp {
+	public static void main(String[] args) {
+		// IOC Container got into Action
+		ApplicationContext appContext=new ClassPathXmlApplicationContext("/beans.xml");
+		
+	}
+
+}

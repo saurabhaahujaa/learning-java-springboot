@@ -1,0 +1,9 @@
+package training.oracle.rest;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("TMSApp")
+public class ApplicationConfig extends Application{
+
+}

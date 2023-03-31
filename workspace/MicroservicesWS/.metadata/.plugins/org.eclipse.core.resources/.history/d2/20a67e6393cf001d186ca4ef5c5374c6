@@ -1,0 +1,5 @@
+package training.oracle.ratingdataservice.resources;
+
+public class RatingResource {
+
+}

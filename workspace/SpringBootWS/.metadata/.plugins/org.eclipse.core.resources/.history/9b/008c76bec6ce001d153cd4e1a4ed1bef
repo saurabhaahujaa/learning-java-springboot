@@ -1,0 +1,8 @@
+package training.oracle.springbootrestapp;
+
+public class HomeController {
+	public String welcomeMessage() {
+		return "Welcome to Home Page of RestApp";
+	}
+
+}

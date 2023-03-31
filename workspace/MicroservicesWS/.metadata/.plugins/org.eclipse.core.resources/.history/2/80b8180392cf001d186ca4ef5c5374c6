@@ -1,0 +1,14 @@
+package training.oracle.movieinfoservice.resources;
+
+import training.oracle.movieinfoservice.models.Movie;
+
+@RestController
+@RequestMapping("/movie")
+public class MovieResource {
+	
+	@RequestMapping("/{movieId}")
+	public Movie getInfo(@PathVariable("movieId") String movieId) {
+		return new Movie(movieId,"Vikram");
+	};
+
+}

@@ -1,0 +1,24 @@
+package oracle.tms.business.impl;
+
+import java.util.List;
+
+import oracle.tms.business.RTOOperations;
+import oracle.tms.entities.OffenceEO;
+
+public class RTOOperationsImpl implements RTOOperations {
+	
+	private OffenceDAO offenceDAORef;
+
+	@Override
+	public Integer addOffenceType(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<OffenceEO> fetchAllOffenceTypes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

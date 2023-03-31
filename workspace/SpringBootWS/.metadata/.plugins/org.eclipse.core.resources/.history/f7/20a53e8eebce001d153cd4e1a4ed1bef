@@ -1,0 +1,29 @@
+package training.oracle.business.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import training.oracle.business.RTOOperations;
+import training.oracle.dao.OffenceRepository;
+import training.oracle.entities.OffenceEO;
+
+public class RTOOperationsImpl implements RTOOperations {
+	
+	@Autowired
+	private OffenceRepository offenceRepository;
+
+	@Override
+	public Integer addOffenceType(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		OffenceEO returnOffenceEO=offenceRepository.save(offenceEORef);
+	}
+
+	@Override
+	public List<OffenceEO> fetchAllOffenceTypes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

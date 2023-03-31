@@ -1,0 +1,74 @@
+package oracle.tms.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="TM_OFFENCE")
+public class OwnerDetailsEO {
+
+
+	@Id
+	@Column(name="OWNER_ID")
+	private Integer ownerId;
+	
+	@Column(name="FNAME")
+	private String fName;
+	
+	@Column(name="LNAME")
+	private String lName;
+	
+	@Column(name="DATEOFBIRTH")
+	private String dateOfBirth;
+	
+	@Column(name="LANDLINE_NO")
+	private Integer landlineNo;
+	
+	@Column(name="MOBILE_NO")
+	private String mobileNo;
+	
+	@Column(name="GENDER")
+	private String gender;
+	
+	@Column(name="TEMP_ADDR")
+	private String tempAddr;
+	
+	@Column(name="PERM_ADDR")
+	private String permAddr;
+	
+	@Column(name="PINCODE")
+	private Integer pincode;
+	
+	@Column(name="OCCUPATION")
+	private String occupation;
+	
+	@Column(name="PANCARD_NO")
+	private String pancardNo;
+	
+	@Column(name="ADD_PROOF_NAME")
+	private String addProofName;
+	
+	public OwnerDetailsEO() {}
+	
+	public OwnerDetailsEO(Integer ownerId, String fName, String lName, String dateOfBirth, Integer landlineNo,
+			String mobileNo, String gender, String tempAddr, String permAddr, Integer pincode, String occupation,
+			String pancardNo, String addProofName) {
+		super();
+		this.ownerId = ownerId;
+		this.fName = fName;
+		this.lName = lName;
+		this.dateOfBirth = dateOfBirth;
+		this.landlineNo = landlineNo;
+		this.mobileNo = mobileNo;
+		this.gender = gender;
+		this.tempAddr = tempAddr;
+		this.permAddr = permAddr;
+		this.pincode = pincode;
+		this.occupation = occupation;
+		this.pancardNo = pancardNo;
+		this.addProofName = addProofName;
+	}
+	
+		
+	
+
+}

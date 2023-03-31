@@ -1,0 +1,314 @@
+Day 2 :
+
+	Module -1 : Hibernate 
+	
+		Relationships 
+		
+			1.  One to One
+			
+			2.  One to Many 
+			
+			3.  Many to One 
+			
+			4.  Many to Many 
+			
+		Cascade Operations in Hibernate 
+		
+			CascadeType = REMOVE
+				
+				If We Delete Master EO, the Associated Detail EO are ALSO DELETED
+			
+			CascadeType = PERSIST
+			
+				Persist Operation makes Transient Instance into Persistent,  If We Persist Master EO, then the Associated DETAIL EO ( Which Was Still Not Persisted ) Will Also be PERSISTED [ Saved ( Insert ) ]
+				
+			CascadeType = MERGE
+			
+				Merge Operation makes Entity Instance to Updated,  If We Merge Master EO, then the Associated DETAIL EO Will Also be Merged [ UPDATED  ]
+				
+				
+			CascadeType = DETACH
+			
+				If Evict Operation makes Entity Instance to be Detached,  If We Evict/detach Master EO, then the Associated DETAIL EO Will Also be Evict/Detached [ Moves the EO's to Detached STATE IN ENTITY LIFECYCLE  ]
+				
+			
+			CascadeType = REFRESH
+			
+				If Refresh Operation makes Entity Instance to be Refreshed Data From DataStore,  If We Refresh Master EO, then the Associated DETAIL EO Will Also be Refreshed 
+			
+			
+		Module -2 
+		
+			Spring Framework 
+			
+				Removes Lot of Problematic Situations in JEE 
+				
+					
+				Package 
+				
+					1.  Components Which Goes on the Serverside 
+					
+							CurrencyConvertor, CurrencyConvertorImpl
+					
+					
+					2.  Components Which Goes on the Clientside 
+					
+							If Web Application 
+							
+								JSP or JSF 
+								
+								CurrencyConvertor
+								
+								
+				AOP : AOP - Aspect Oriented Programming
+				
+					A Pure Separation of Logic from Services 
+					
+				
+				Business Logic 
+				
+					a.  Logic Execution
+					
+					b.  Services 
+					
+				Stage 1 :
+				
+				public class Account
+				{
+					
+					public void deposit()
+					{
+						 Authentication
+						 
+						 Authorization
+						 
+							 Deposit Logic
+							 
+						 Logging 
+						 
+						 Transaction
+					}
+					
+					public void withdraw()
+					{
+						 Authentication
+						 
+						 Authorization
+						 
+							 Withdraw Logic
+							 
+						 Logging 
+						 
+						 Transaction
+					}
+				}
+				
+				Stage 2 : Reusable To the Business Classes
+				
+				public class Account
+				{
+					public void securityService()
+					{
+						 Authentication
+						 
+						 Authorization
+					}
+				
+					public void loggingAndTransactionService()
+					{
+						Logging 
+						 
+						Transaction
+					
+					}
+					
+					
+					public void deposit()
+					{
+						 securityService()
+						 
+							 Deposit Logic
+						
+						 loggingAndTransactionService()
+					}
+					
+					public void withdraw()
+					{
+						 securityService()
+						 
+							 Withdraw Logic
+							 
+						 loggingAndTransactionService()
+					}
+				}
+				
+				
+				Stage 3 : Reusable Across Business Classes
+				
+				public class Services
+				{
+					public void securityService()
+					{
+						 Authentication
+						 
+						 Authorization
+					}
+				
+					public void loggingAndTransactionService()
+					{
+						Logging 
+						 
+						Transaction
+					
+					}
+					
+				}
+				  
+				public class Account
+				{
+					Services servRef;
+					
+					public void deposit()
+					{
+						 servRef.securityService()
+						 
+							 Deposit Logic
+						
+						 servRef.loggingAndTransactionService()
+					}
+					
+					public void withdraw()
+					{
+						 servRef.securityService()
+						 
+							 Withdraw Logic
+							 
+						 servRef.loggingAndTransactionService()
+					}
+				}
+				
+				Stage 4 : Modularizing Services To More Granular
+				
+				public class Services
+				{
+					public void authenticationService()
+					{
+						 Authentication
+					}
+				
+					public void authorizationService()
+					{
+						 Authorization
+					}
+				
+					public void loggingService()
+					{
+						Logging 
+					}
+					
+					public void transactionService()
+					{
+						Transaction 
+					}
+				  }
+				  
+				  public class Account
+				  {
+					Services servRef;
+					
+					public void deposit()
+					{
+						 servRef.authenticationService()
+
+						 servRef.authorizationService();
+						 
+							 Deposit Logic
+						
+						 servRef.transactionService()
+					}
+					
+					public void withdraw()
+					{
+						 servRef.authenticationService()
+						 
+							 Withdraw Logic
+							 
+						 servRef.loggingService();
+						 
+						 servRef.transactionService();
+					}
+				}
+				
+				
+				Stage 5 : CommandPattern Approach
+				
+				public class AuthenticationService
+				{
+					public void authenticate()
+					{
+						 Authentication
+					}
+				}
+				
+				public class AuthorizationService
+				{
+					public void authorize()
+					{
+						 Authorization
+					}
+				}
+				
+				public class LoggingService
+				{
+					public void logging()
+					{
+						Logging 
+					}
+				}
+				
+				public class TransactionService
+				{
+					public void transact()
+					{
+						Transaction 
+					}
+				  }
+				  
+				  public class Account
+				  {
+					AuthenticationService authServRef;
+					AuthorizationService authorizeServRef;
+					TransactionService transactionServRef
+					
+					public void deposit()
+					{
+						 authServRef.authenticationService()
+
+						 authorizeServRef.authorizationService();
+						 
+							 Deposit Logic
+						
+						 transactionServRef.transactionService()
+					}
+					
+					public void withdraw()
+					{
+						 authServRef.authenticationService()
+						 
+							 Withdraw Logic
+							 
+						 servRef.loggingService();
+						 servRef.transactionService();
+					}
+				}
+				
+				Complete Separation of Services From Business Layer is Achived VIA AOP 
+				
+				We Plug and Play Services NOT in the Source inturn it in the Configuration
+				
+				
+		
+		
+			
+			
+			

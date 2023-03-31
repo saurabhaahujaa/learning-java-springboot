@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/sauahuja/code/learning-java-springboot/workspace/Restful-WS/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3026711468.index
+2724034881.index
+1428657144.index
+4036681200.index
+3872832254.index
+2887371606.index

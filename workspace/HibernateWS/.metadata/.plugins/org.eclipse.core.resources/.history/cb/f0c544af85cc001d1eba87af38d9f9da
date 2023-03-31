@@ -1,0 +1,10 @@
+package oracle.tms.utils;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	private static final SessionFactory sessionFactoryRef;
+	static {
+		sessionFactoryRef=new Configuration.configure()
+	}
+}

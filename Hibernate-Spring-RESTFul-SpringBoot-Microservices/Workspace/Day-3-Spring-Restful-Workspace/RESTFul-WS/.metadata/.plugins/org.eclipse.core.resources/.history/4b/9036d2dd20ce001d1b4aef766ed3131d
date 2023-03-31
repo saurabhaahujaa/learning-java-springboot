@@ -1,0 +1,24 @@
+package training.oracle.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
+
+@Path("greeting")
+public class GreetingResource {
+
+	private static String message = 
+				"Welcome to the New Era of Developing WebServices ... !";
+	
+	@GET
+	@Produces({MediaType.TEXT_PLAIN})
+	public String getMessage() {
+		return message;
+	}
+	
+	@PUT
+	public void setMessage(String givenMessage) {
+		this.message = givenMessage;
+	}
+}

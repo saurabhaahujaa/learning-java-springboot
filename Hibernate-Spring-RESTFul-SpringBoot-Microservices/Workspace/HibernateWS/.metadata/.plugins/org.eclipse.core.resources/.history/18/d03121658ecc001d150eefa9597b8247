@@ -1,0 +1,13 @@
+package oracle.tms.test;
+
+import oracle.tms.entities.OffenceEO;
+
+public class OffenceEOTest {
+
+	
+	public void testInsertOffence() {
+		
+		// Creating an Entity Object 
+		OffenceEO offenceEORef = new OffenceEO(new Integer(1001),"No Licence" , new Integer(5000), "All Vehicles" )
+	}
+}

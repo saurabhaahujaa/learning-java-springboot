@@ -1,0 +1,42 @@
+package oracle.tms.test;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+import oracle.tms.dao.OffenceDAO;
+import oracle.tms.dao.impl.OffenceDAOImpl;
+import oracle.tms.entities.OffenceEO;
+
+public class OffenceEOTest {
+	public OffenceDAO offenceDAORef=new OffenceDAOImpl();
+	
+	@Test
+	public void testInsertOffence() {
+		
+		//Create entity object
+		OffenceEO offenceEORef=
+				new OffenceEO(new Integer(1004),"No License",new Float(5000.0f),"All vehicles");
+		
+		//Invoke the DAO Impl
+		Integer result=offenceDAORef.insertOffence(offenceEORef);
+		
+		//Testing
+		Assert.assertEquals(new Integer(1004), result);
+	}
+	@Test
+	public void testUpdateOffence() {
+		
+		//Create entity object
+		OffenceEO offenceEORef=
+				new OffenceEO(new Integer(1001),"Rash Driving",new Float(10000.0f),"All vehicles");
+		
+		//Invoke the DAO Impl
+		offenceDAORef.updateOffence(offenceEORef);
+		
+		//Testing
+//		Assert.assertEquals(new Integer(1004), result);
+	}
+
+
+
+}

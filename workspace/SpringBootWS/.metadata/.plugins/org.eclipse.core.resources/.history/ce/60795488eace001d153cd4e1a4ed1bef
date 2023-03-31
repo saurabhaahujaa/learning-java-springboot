@@ -1,0 +1,9 @@
+package training.oracle.business;
+
+import training.oracle.entities.OffenceEO;
+
+public interface RTOOperations {
+
+	public void addOffence(OffenceEO offenceEORef);
+	
+}

@@ -1,0 +1,12 @@
+package training.oracle.springbootlogging;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LoggingController {
+	
+	public String index() {
+		
+	}
+
+}

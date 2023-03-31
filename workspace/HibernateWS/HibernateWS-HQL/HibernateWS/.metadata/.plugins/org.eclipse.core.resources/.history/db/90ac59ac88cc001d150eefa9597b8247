@@ -1,0 +1,49 @@
+package oracle.tms.dao.impl;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import oracle.tms.dao.OffenceDAO;
+import oracle.tms.entities.OffenceEO;
+import oracle.tms.utils.HibernateUtil;
+
+public class OffenceDAOImpl implements OffenceDAO {
+
+	@Override
+	public Integer insertOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef = HibernateUtil.getSessionFactory();
+		Session sessionRef = sessionFactoryRef.openSession(); // To Invoke API Methods
+			sessionRef.beginTransaction(); // We Will Manage the Transaction
+				Integer returnedPK = (Integer)sessionRef.save(offenceEORef); // API Call
+			sessionRef.getTransaction().commit(); 
+		sessionRef.close(); // Releases the Session 
+		return returnedPK;
+	}
+
+	@Override
+	public void updateOffence(OffenceEO offenceEORef) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		SessionFactory sessionFactoryRef = HibernateUtil.getSessionFactory();
+		Session sessionRef = sessionFactoryRef.openSession(); // To Invoke API Methods
+			sessionRef.beginTransaction(); // We Will Manage the Transaction
+				sessionRef.update(offenceEORef);
+			sessionRef.getTransaction().commit(); 
+		sessionRef.close(); // Releases the Session 
+		
+	}
+
+	@Override
+	public void deleteOffence(Integer offenceID) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public OffenceEO findOffenceEOByPrimaryKey(Integer offenceID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

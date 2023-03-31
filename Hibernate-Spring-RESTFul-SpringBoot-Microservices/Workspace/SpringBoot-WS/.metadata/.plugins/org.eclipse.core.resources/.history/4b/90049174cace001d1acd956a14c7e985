@@ -1,0 +1,10 @@
+package training.oracle.springbootlogging;
+
+@RestController
+public class LoggingController {
+
+	@RequestMapping("/")
+	public String index() {
+		
+	}
+}

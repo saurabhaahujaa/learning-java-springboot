@@ -1,0 +1,13 @@
+127.0.0.1 - - [29/Mar/2023:10:40:48 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:10:40:49 +0530] "GET /TMSApp/AddNewOffenceType.html HTTP/1.1" 404 784
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:10:42:53 +0530] "GET /TMSApp/AddNewOffenceType.html HTTP/1.1" 404 784
+127.0.0.1 - - [29/Mar/2023:10:44:45 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:10:44:46 +0530] "GET /TMSApp/AddNewOffenceType.html HTTP/1.1" 200 671
+127.0.0.1 - - [29/Mar/2023:11:27:25 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:27:27 +0530] "GET /TMSApp/AddOffenceType.jsp HTTP/1.1" 500 2760
+127.0.0.1 - - [29/Mar/2023:11:28:15 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:28:16 +0530] "GET /TMSApp/AddOffenceType.jsp HTTP/1.1" 500 2750
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:30:10 +0530] "GET /TMSApp/AddNewOffenceType.html HTTP/1.1" 200 689
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:30:30 +0530] "POST /TMSApp/AddOffenceType.jsp HTTP/1.1" 200 171
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:30:45 +0530] "GET /TMSApp/AddNewOffenceType.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:11:30:54 +0530] "GET /TMSApp/AddOffenceType.jsp HTTP/1.1" 500 2760

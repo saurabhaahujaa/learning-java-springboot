@@ -1,0 +1,10 @@
+package training.oracle.rest;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("Lesson01-RESTFulWS-App")
+public class ApplicationConfig extends Application {
+
+	
+}

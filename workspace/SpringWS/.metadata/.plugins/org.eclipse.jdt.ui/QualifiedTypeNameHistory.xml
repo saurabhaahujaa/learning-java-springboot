@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="oracle.spring.business.impl.CurrencyConvertorImpl"/>
+<fullyQualifiedTypeName name="oracle.spring.business.impl.Customer"/>
+<fullyQualifiedTypeName name="oracle.spring.business.CurrencyConvertor"/>
+<fullyQualifiedTypeName name="oracle.tms.dao.OffenceDAO"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="oracle.tms.business.RTOOperations"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="oracle.tms.entities.OffenceEO"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+</qualifiedTypeNameHistroy>

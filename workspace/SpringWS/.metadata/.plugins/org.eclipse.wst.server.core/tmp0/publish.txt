@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Mar 29 11:29:57 IST 2023
+org.eclipse.jst.jee.server\:/binary\:/home/sauahuja/code/learning-java-springboot/workspace/SpringWS/Lesson06-UI-Spring-ORM/WebContent/WEB-INF/lib/spring-web-5.3.5-sources.jar=WEB-INF/lib/spring-web-5.3.5-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/sauahuja/code/learning-java-springboot/workspace/SpringWS/Lesson06-UI-Spring-ORM/WebContent/WEB-INF/lib/spring-web-5.3.5.jar=WEB-INF/lib/spring-web-5.3.5.jar

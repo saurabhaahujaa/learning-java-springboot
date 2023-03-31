@@ -1,0 +1,7 @@
+package training.oracle.movieinfoservice.resources;
+
+public class MovieResource {
+	
+	public Movie getInfo();
+
+}

@@ -1,0 +1,91 @@
+package oracle.tms.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="TM_OFFENCE")
+public class OwnerDetailsEO {
+	@Id
+	@Column(name="OWNER_ID")
+	private Integer ownerId;
+	
+	@Column(name="FNAME")
+	private String fName;
+	
+	@Column(name="LNAME")
+	private String lName;
+	
+	@Column(name="DATEOFBIRTH")
+	private String dateOfBirth;
+	
+	@Column(name="LANDLINE_NO")
+	private String dateOfBirth;
+	
+	@Column(name="MOBILE_NO")
+	private String dateOfBirth;
+	
+	@Column(name="GENDER")
+	private String dateOfBirth;
+	
+	@Column(name="TEMP_ADDR")
+	private String dateOfBirth;
+	
+	@Column(name="PERM_ADDR")
+	private String dateOfBirth;
+	
+	@Column(name="PINCODE")
+	private String dateOfBirth;
+	
+	@Column(name="OCCUPATION")
+	private String dateOfBirth;
+	
+	@Column(name="PANCARD_NO")
+	private String dateOfBirth;
+	
+	@Column(name="ADD_PROOF_NAME")
+	private String dateOfBirth;
+	
+	public OwnerDetailsEO() {}
+	
+	public OwnerDetailsEO(Integer offenceId, String offenceType, Float penalty, String vehicleType) {
+		super();
+		this.offenceId = offenceId;
+		this.offenceType = offenceType;
+		this.penalty = penalty;
+		this.vehicleType = vehicleType;
+	}
+	
+	public Integer getOffenceId() {
+		return offenceId;
+	}
+	public void setOffenceId(Integer offenceId) {
+		this.offenceId = offenceId;
+	}
+	public String getOffenceType() {
+		return offenceType;
+	}
+	public void setOffenceType(String offenceType) {
+		this.offenceType = offenceType;
+	}
+	public Float getPenalty() {
+		return penalty;
+	}
+	public void setPenalty(Float penalty) {
+		this.penalty = penalty;
+	}
+	public String getVehicleType() {
+		return vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+
+	@Override
+	public String toString() {
+		return "OffenceEO [offenceId=" + offenceId + ", offenceType=" + offenceType + ", penalty=" + penalty
+				+ ", vehicleType=" + vehicleType + "]";
+	}
+	
+	
+
+}

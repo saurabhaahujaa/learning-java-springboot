@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/sauahuja/code/learning-java-springboot/workspace/SpringWS/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3631091214.index
+1989380901.index
+3894242283.index
+410940251.index
+3498363007.index
+747671573.index

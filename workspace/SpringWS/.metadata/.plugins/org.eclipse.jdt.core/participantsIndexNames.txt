@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/sauahuja/code/learning-java-springboot/workspace/SpringWS/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2000893933.index
+/Lesson06-UI-Spring-ORM/src

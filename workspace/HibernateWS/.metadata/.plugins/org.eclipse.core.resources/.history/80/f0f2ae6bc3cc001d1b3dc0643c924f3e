@@ -1,0 +1,27 @@
+package oracle.tms.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import oracle.tms.dao.OwnerDetailsDAO;
+import oracle.tms.dao.impl.OwnerDetailsDAOImpl;
+import oracle.tms.entities.OwnerDetailsEO;
+
+class OwnerDetailsEOTest {
+	
+	public OwnerDetailsDAO ownerDetailsRef= new OwnerDetailsDAOImpl();
+
+	public void testInsertOwnerDetails() {
+		
+		//Create entity object
+		OwnerDetailsEO ownerDetailsEORef=
+				new OwnerDetailsEO(new Integer(1001),"John","Chambers","12/1/80",new Integer(803456),"7790882716","MALE","12,JM,UK","11,US",new Integer(560075),"CEO","ahrrp2323p","Adhaar");
+		//Invoke the DAO Impl
+		Integer result=ownerDetailsRef.insertOwnerDetails(ownerDetailsEORef);
+		
+		//Testing
+//		Assert.assertEquals(new Integer(1004), result);
+	}
+
+}

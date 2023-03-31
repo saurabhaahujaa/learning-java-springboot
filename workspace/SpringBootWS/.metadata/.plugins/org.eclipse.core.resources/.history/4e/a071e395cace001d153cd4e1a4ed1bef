@@ -1,0 +1,14 @@
+package training.oracle.springbootlogging;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LoggingController {
+	
+	@RequestMapping("/")
+	public String index() {
+		logger.trace("A Trace Message");
+	}
+
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Add New Offence Type</h2>
+	<table>
+	<tr>
+		<td>OffenceID: </td>
+		<td><input type="text" name="offenceType"/></table>
+</body>
+</html>

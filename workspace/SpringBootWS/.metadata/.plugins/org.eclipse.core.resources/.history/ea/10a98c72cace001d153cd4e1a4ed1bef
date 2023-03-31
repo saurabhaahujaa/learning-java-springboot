@@ -1,0 +1,6 @@
+package training.oracle.springbootlogging;
+
+@RestController
+public class LoggingController {
+
+}

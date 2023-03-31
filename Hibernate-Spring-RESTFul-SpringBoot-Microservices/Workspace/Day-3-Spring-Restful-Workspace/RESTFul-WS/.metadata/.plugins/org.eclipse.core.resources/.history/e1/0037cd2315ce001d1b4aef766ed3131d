@@ -1,0 +1,8 @@
+package training.oracle.rest;
+
+import javax.ws.rs.Path;
+
+@Path("greeting")
+public class GreetingResource {
+
+}

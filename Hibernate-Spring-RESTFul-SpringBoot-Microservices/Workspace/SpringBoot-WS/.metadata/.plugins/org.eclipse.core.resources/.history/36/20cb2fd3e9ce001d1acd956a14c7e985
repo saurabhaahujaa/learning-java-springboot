@@ -1,0 +1,6 @@
+package training.oracle.dao;
+
+@Repository
+public interface OffenceRepository extends CrudRepository<OffenceEO, Integer>{
+
+}

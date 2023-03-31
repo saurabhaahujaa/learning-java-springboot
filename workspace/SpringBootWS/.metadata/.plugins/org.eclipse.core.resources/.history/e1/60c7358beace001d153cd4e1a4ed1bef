@@ -1,0 +1,10 @@
+package training.oracle.business;
+
+import training.oracle.entities.OffenceEO;
+
+public interface RTOOperations {
+
+	public Integer addOffence(OffenceEO offenceEORef);
+	
+	public List<OffenceEO> fetchAllOffenceType(OffenceEO)
+}
